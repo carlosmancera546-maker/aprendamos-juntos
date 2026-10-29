@@ -1,0 +1,608 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8f7;
+    color: #304253;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.encabezado,
+.contenedor,
+.pie-pagina {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.encabezado {
+    background: #2f373a;
+    color: white;
+    min-height: 65px;
+    padding: 15px 25px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.encabezado h2 {
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.encabezado nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.encabezado nav a {
+    color: white;
+    font-size: 12px;
+}
+
+.encabezado nav a:hover {
+    text-decoration: underline;
+}
+/* COLORES DEFINITIVOS */
+
+body {
+    background-color: rgba(68, 255, 0, 0.13) !important;
+}
+
+.encabezado {
+    background: rgba(0, 149, 255, 0.705) !important;
+}
+
+/* FONDO PRINCIPAL */
+.contenedor {
+    background: #eaf6fd;
+    padding: 25px 50px 35px;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.bienvenida-texto {
+    text-align: center;
+}
+
+.bienvenida h1 {
+    color: #317eae;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.bienvenida p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: 2px solid #3988b9;
+}
+
+.amarillo {
+    background: #ffcb50;
+    border-color: #ffcb50;
+    color: #354354;
+}
+
+.blanco {
+    background: white;
+}
+
+.boton:hover,
+.boton-tarjeta:hover {
+    opacity: 0.8;
+}
+
+/* ILUSTRACIÓN */
+.ilustracion {
+    width: 100%;
+    max-width: 350px;
+    height: 185px;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid #73b5df;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.ilustracion img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* PRESENTACIÓN */
+.presentacion {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.presentacion h2 {
+    color: #317eae;
+    margin-bottom: 10px;
+}
+
+/* MATERIAS */
+.titulo-seccion {
+    text-align: center;
+    color: #317eae;
+    font-size: 21px;
+    margin: 25px 0 12px;
+}
+
+.rejilla-materias {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.tarjeta {
+    min-height: 145px;
+    border-radius: 13px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.naranja {
+    background: #ffa34e;
+}
+
+.rosada {
+    background: #f9b1c8;
+}
+
+.morada {
+    background: #e2d5ff;
+}
+
+.verde {
+    background: #7bd18e;
+}
+
+.azul {
+    background: #5da9df;
+}
+
+.icono {
+    width: 39px;
+    height: 39px;
+    min-width: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 2px solid #347eaa;
+    border-radius: 50%;
+    color: #304253;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.contenido-tarjeta {
+    flex: 1;
+    min-width: 0;
+}
+
+.contenido-tarjeta h3 {
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+
+.contenido-tarjeta p {
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.boton-tarjeta {
+    display: block;
+    background: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 11px;
+    width: 100%;
+    max-width: 100px;
+}
+
+/* RECURSOS Y CONSEJOS */
+.rejilla-inferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.tarjeta-inferior {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    min-height: 115px;
+    background: white;
+    border: 2px solid #73b5df;
+    border-radius: 12px;
+}
+
+.tarjeta-inferior h3 {
+    color: #317eae;
+    font-size: 16px;
+}
+
+.tarjeta-inferior p {
+    font-size: 12px;
+}
+
+/* CONTENIDO DE LAS SECCIONES */
+.contenido-educativo {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-top: 25px;
+    scroll-margin-top: 20px;
+}
+
+.contenido-educativo h2 {
+    color: #317eae;
+    margin-bottom: 10px;
+}
+
+.contenido-educativo ul {
+    padding-left: 22px;
+}
+
+.contenido-educativo a {
+    color: #247eb5;
+    text-decoration: underline;
+}
+
+/* PIE DE PÁGINA */
+.pie-pagina {
+    background: #2c7db5;
+    color: white;
+    padding: 30px 50px;
+    min-height: 180px;
+    border-radius: 0 0 15px 15px;
+}
+
+.pie-pagina h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.pie-pagina p {
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.pie-pagina small {
+    font-size: 11px;
+}
+
+.pie-pagina a {
+    color: white;
+}
+
+
+/* DISEÑO RESPONSIVE PARA CELULARES */
+
+@media screen and (max-width: 650px) {
+
+    body {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .encabezado h2 {
+        white-space: normal;
+        font-size: 22px;
+    }
+
+    .encabezado nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .encabezado nav a {
+        font-size: 12px;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    .bienvenida {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bienvenida h1 {
+        font-size: 24px;
+    }
+
+    .ilustracion {
+        width: 100%;
+        max-width: 350px;
+        height: 185px;
+        margin: 0 auto;
+    }
+
+    .ilustracion img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .rejilla-materias {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .tarjeta {
+        min-width: 0;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .contenido-tarjeta h3 {
+        font-size: 13px;
+    }
+
+    .rejilla-inferior {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .pie-pagina {
+        padding: 25px 18px;
+    }
+}
+
+/* CELULARES MUY PEQUEÑOS */
+
+@media screen and (max-width: 400px) {
+
+    .contenedor {
+        padding: 18px 10px;
+    }
+
+    .rejilla-materias {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .botones {
+        gap: 8px;
+    }
+
+    .boton {
+        padding: 9px 15px;
+    }
+}
+
+/* =====================================
+    FORMULARIO DE CONTACTO
+    APRENDEMOS JUNTOS
+===================================== */
+
+.contacto {
+    width: 100%;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #d8e8f3;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Título y descripción */
+.contacto h2 {
+    color: #2477af;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.contacto > p {
+    text-align: center;
+    color: #526778;
+    margin-bottom: 25px;
+}
+
+/* Organización del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Etiquetas */
+.formulario label {
+    color: #304253;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Campos */
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccdce9;
+    border-radius: 9px;
+    background-color: #f8fbfe;
+    color: #304253;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+/* Efecto al seleccionar un campo */
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: #287db5;
+    box-shadow: 0 0 0 3px rgba(40, 125, 181, 0.15);
+}
+
+/* Mensaje */
+.formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Campos obligatorios */
+.formulario .obligatorios {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Contenedor de botones */
+.formulario .botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Estilos compartidos */
+.formulario .btn-enviar,
+.formulario .btn-whatsapp {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botón azul */
+.formulario .btn-enviar {
+    background-color: #287db5;
+}
+
+.formulario .btn-enviar:hover {
+    background-color: #175c8a;
+}
+
+/* Botón verde */
+.formulario .btn-whatsapp {
+    background-color: #21a366;
+}
+
+.formulario .btn-whatsapp:hover {
+    background-color: #17824e;
+}
+
+/* Nota de privacidad */
+.formulario .nota {
+    text-align: center;
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 12px;
+}
+
+/* =====================================
+    DISEÑO ADAPTABLE PARA CELULARES
+===================================== */
+
+@media (max-width: 650px) {
+
+    .contacto {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    .contacto h2 {
+        font-size: 23px;
+    }
+
+    .contacto > p {
+        font-size: 14px;
+    }
+
+    .formulario input,
+    .formulario select,
+    .formulario textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .formulario .botones {
+        flex-direction: column;
+    }
+
+    .formulario .btn-enviar,
+    .formulario .btn-whatsapp {
+        width: 100%;
+        flex: auto;
+    }
+}
